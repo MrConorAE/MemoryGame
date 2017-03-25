@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Memory Game</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link type="text/css" rel=stylesheet href="style.css">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+	<div id='top'>
+		<h1>Memory Game</h1>
+		<p id='header'><span id='task'>Memorize these</span> <span id='numDigits'>0</span> digits:</p>
+	</div>
+	<div id='digitArea'>
+		<h1 id='memDigit'></h1>
+	</div>
+	<div id='boxArea'>
+		<input type='text' id='textIn'>
+		<button type="button" id='btnSubmit' onclick='checkUser()'>Submit</button>
+	</div>
+	<div id='bottom'>
+		<img src="tick.png">
+		<p>Correct!</p>
+		<button type="button" onclick='newNums()' id='correctBtn'>Continue</button>
+	</div>
+	<div id='bottomWrong'>
+		<img src="cross.png">
+		<p>Wrong - game over!</p>
+		<p>Your score is <span id='numCorrect'>0</span> digits.</p>
+	</div>
+</body>
+
+</html>
